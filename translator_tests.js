@@ -3,6 +3,7 @@ const assert = require('assert');
 
 (async () => {
     for (const browserType of ['chromium', 'firefox', 'webkit']){
+        console.log("TESTS FOR BROWSER: " + browserType);
     const browser = await playwright[browserType].launch({
         ignoreDefaultArgs: ['--disable-extensions'],
         headless: false,
